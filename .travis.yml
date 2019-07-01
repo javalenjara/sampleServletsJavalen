@@ -1,0 +1,11 @@
+language: java
+jdk:
+- oraclejdk8
+
+addons:
+    sonarcloud:
+        organization: "javalenjara-github"
+        token:
+            secure: YESVJQSG+0itRWaWmPK+Ey5UN7x8mT5arlvAzfHICJr4rZr+r6fGfyA4Dh/2+qlaz7g0KOuX1uGL836kh+X/X7UIa4JTyapak1z1WLOCLr/95batZ7EKx3XBJbacFj5XvpI2Hu1CcsqdOueRxUSClSSN/LMbsU6LV3aYkr/TIRqzZuBGfXxhB8fsPyiUKcaP0tRcEGRY0hqootrbA4Vwt/Nk3NY761XDkvEE+jAbjqw8DQrWURXCAuexGDwrFI+XDWnCT/uWRzOjTpNy3UynJ51Yvb62I5FIEozgRTELk79m5EyYSFGlUmWVuKiFk0IVomKBA1s9JvEo4YP0UyIJMIDnH1AgpsX25n3HDnkzDe90jJ7kcuqZXc72udi1KPFdfAMJ9X+OOKbIS2vsxLqSjTiRSjEcUayjbwmuI8cm2/MeW+UCA3A3EfCfXflXmz/EF3DAAPwn5PeyFQIyCQP3lhYrO0g7bNWu6qBrck8/M2qTdoifvJFeQwHcTBmNxL4lcwDNbDLuPE9f/015SPJR6RZVryZElcRkEb1c9qxq4GjrtsygdzivSMoOJJIaHdbjxlXWcPKJYmSFRoSGwTPwUo7oiDTHgz07OQR0OtPaL8CwWCf1+aWsgnIFf/2OQShkQAEBot7qQc98UVzy9VU4k0d5TF4QuWFmXLwD9tvVl4M=       
+script:
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
