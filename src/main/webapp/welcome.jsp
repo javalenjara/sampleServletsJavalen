@@ -4,6 +4,7 @@
     Author     : javalenja
 --%>
 
+<%@taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c' %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,8 +13,6 @@
         <title>Welcome</title>
     </head>
     <body>
-        <% 
-            out.println(request.getAttribute("message"));
-        %>
+        <c:out value="${message}"/>
     </body>
 </html>
