@@ -6,7 +6,7 @@
     </servlet>
     <servlet>
         <servlet-name>SubmitFromJSPServlet</servlet-name>
-        <servlet-class>SubmitFromJSPServlet</servlet-class>
+        <servlet-class>edu.udem.java2.ejemplo1.sampleservletsjavalen.SubmitFromJSPServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
