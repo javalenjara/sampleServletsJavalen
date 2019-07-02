@@ -163,7 +163,7 @@ public class FirstServlet extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException {
         Persona person = new Persona(); 
         person.setNombre(request.getParameter("name"));
         person.setApellidos(request.getParameter("lastName"));
@@ -171,11 +171,15 @@ public class FirstServlet extends HttpServlet {
         person.setPassword(request.getParameter("pwd"));
         
         String personaJsonString = new Gson().toJson(person);
-        PrintWriter out = response.getWriter();
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-        out.print(personaJsonString);
-        out.flush();
+        try(PrintWriter out = response.getWriter()){
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            out.print(personaJsonString);
+            out.flush();
+        }
+        catch(IOException IOex){
+            IOex.getMessage();
+        }
     }
 
     /**
