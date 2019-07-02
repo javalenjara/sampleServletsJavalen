@@ -41,7 +41,7 @@ public class FirstServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>\n" +
@@ -147,6 +147,9 @@ public class FirstServlet extends HttpServlet {
 "</body>\n" +
 "</html>");
             
+        }
+        catch(IOException IOex){
+            IOex.printStackTrace();
         }
     }
 
