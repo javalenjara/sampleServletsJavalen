@@ -55,7 +55,7 @@ public class SubmitFromJSPServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setAttribute("message", "Hello!!" + request.getParameter("fName") + " " + request.getParameter("lName"));
+        request.setAttribute("message", "Hello!! " + request.getParameter("fName") + " " + request.getParameter("lName"));
         RequestDispatcher dispacher = request.getRequestDispatcher("/welcome.jsp");
         dispacher.forward(request, response);
     }
