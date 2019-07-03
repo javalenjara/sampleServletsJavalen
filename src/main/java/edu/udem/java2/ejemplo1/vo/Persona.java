@@ -17,6 +17,16 @@ public class Persona {
     private String usuario;
     private String password;
 
+    public Persona(String nombre, String apellidos, String usuario, String password) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.usuario = usuario;
+        this.password = password;
+    }
+
+    public Persona() {
+    }
+
     /**
      * @return the nombre
      */

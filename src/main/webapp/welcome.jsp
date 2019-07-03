@@ -11,6 +11,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome</title>
+        <style>
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: black;
+            }
+            hr {
+              border: 1px solid #f1f1f1;
+              margin-bottom: 25px;
+            }
+            a {
+              color: dodgerblue;
+            }
+        </style>
     </head>
     <body>
         <c:out value="${message}"/>

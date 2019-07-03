@@ -88,13 +88,13 @@
                 <label for="lName"><b>Apellido</b></label>
                 <input type="text" placeholder="Ingrese Apellido" name="lName" required>
 
-                <label for="email"><b>Login</b></label>
+                <label for="email"><b>Usuario</b></label>
                 <input type="text" placeholder="Ingrese Login" name="login" required>
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Ingrese Password" name="psw" required>
 
-                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <label for="psw-repeat"><b>Repetir Password</b></label>
                 <input type="password" placeholder="Ingrese Password" name="psw-repeat" required>
                 <hr>
 
@@ -102,7 +102,7 @@
             </div>
 
             <div class="container signin">
-                <p>Ya creaste tu cuenta? <a href="#">Sign in</a>.</p>
+                <p>Ya creaste tu cuenta? <a href="login.jsp">Log in</a>.</p>
             </div>
         </form>
     </body>
