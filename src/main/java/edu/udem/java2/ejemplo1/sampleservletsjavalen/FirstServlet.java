@@ -148,8 +148,8 @@ public class FirstServlet extends HttpServlet {
 "</html>");
             
         }
-        catch(IOException IOex){
-            IOex.printStackTrace();
+        catch(IOException ioEx){
+            ioEx.printStackTrace();
         }
     }
 
@@ -177,8 +177,8 @@ public class FirstServlet extends HttpServlet {
             out.print(personaJsonString);
             out.flush();
         }
-        catch(IOException IOex){
-            IOex.getMessage();
+        catch(IOException ioEx){
+            ioEx.getMessage();
         }
     }
 

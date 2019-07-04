@@ -63,17 +63,13 @@ public class SecurityFilter implements Filter {
         }
     }
 
-    /**
-     * Destroy method for this filter
-     */
-    public void destroy() {
-
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        throw new UnsupportedOperationException("No implementado aun.");
     }
 
-    /**
-     * Init method for this filter
-     */
-    public void init(FilterConfig filterConfig) {
-
+    @Override
+    public void destroy() {
+        throw new UnsupportedOperationException("No implementado aun.");
     }
 }

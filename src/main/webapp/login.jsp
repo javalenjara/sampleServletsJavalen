@@ -82,10 +82,10 @@
                 <p>Favor ingresar los campos para hacer log in.</p>
                 <hr>
 
-                <label for="login"><b>Usuario</b></label>
+                <label for="login"><strong>Usuario</strong></label>
                 <input type="text" placeholder="Ingrese nombre de usuario" name="login" required>
 
-                <label for="pwd"><b>Password</b></label>
+                <label for="pwd"><strong>Password<strong></label>
                 <input type="password" placeholder="Ingrese Password" name="pwd" required>
 
                 <button type="submit" class="registerbtn">Log in</button>
