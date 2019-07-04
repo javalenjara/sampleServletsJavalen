@@ -82,19 +82,19 @@
                 <p>Favor ingresar los campos para registrar la cuenta.</p>
                 <hr>
 
-                <label for="fName"><b>Nombre</b></label>
+                <label for="fName"><strong>Nombre</strong></label>
                 <input type="text" placeholder="Ingrese Nombre" name="fName" required>
 
-                <label for="lName"><b>Apellido</b></label>
+                <label for="lName"><strong>Apellido</strong></label>
                 <input type="text" placeholder="Ingrese Apellido" name="lName" required>
 
-                <label for="email"><b>Usuario</b></label>
+                <label for="email"><strong>Usuario</strong></label>
                 <input type="text" placeholder="Ingrese Login" name="login" required>
 
-                <label for="psw"><b>Password</b></label>
+                <label for="psw"><strong>Password</strong></label>
                 <input type="password" placeholder="Ingrese Password" name="psw" required>
 
-                <label for="psw-repeat"><b>Repetir Password</b></label>
+                <label for="psw-repeat"><strong>Repetir Password</strong></label>
                 <input type="password" placeholder="Ingrese Password" name="psw-repeat" required>
                 <hr>
 
