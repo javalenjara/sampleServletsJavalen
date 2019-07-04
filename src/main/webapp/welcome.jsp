@@ -16,12 +16,20 @@
               font-family: Arial, Helvetica, sans-serif;
               background-color: black;
             }
+            .container {
+                padding: 16px;
+                background-color: white;
+            }
             hr {
               border: 1px solid #f1f1f1;
               margin-bottom: 25px;
             }
             a {
               color: dodgerblue;
+            }
+            .signin {
+                background-color: #f1f1f1;
+                text-align: center;
             }
         </style>
     </head>
