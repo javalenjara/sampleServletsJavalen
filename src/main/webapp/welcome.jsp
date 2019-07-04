@@ -34,6 +34,9 @@
         </style>
     </head>
     <body>
-        <c:out value="${message}"/>
+        <hr>
+        <div class="container">
+            <c:out value="${message}"/>
+        </div>
     </body>
 </html>
