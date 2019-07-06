@@ -65,11 +65,11 @@ public class SecurityFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        throw new UnsupportedOperationException("No implementado aun.");
+        
     }
 
     @Override
     public void destroy() {
-        throw new UnsupportedOperationException("No implementado aun.");
+        
     }
 }
