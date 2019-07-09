@@ -5,23 +5,32 @@
  */
 package org.h2.server.web;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * Web application lifecycle listener.
  *
- * @author 8028609
+ * @author javalenja
  */
 public class DbStarter implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Aplicaión iniciada");
+//        try {
+//            Class.forName ("org.h2.Driver");
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(DbStarter.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Aplicaión detenida");
+        
     }
 }
